@@ -1,27 +1,25 @@
 import { describe, it } from 'mocha'
 import { expect } from 'chai'
-import { exists } from '../lib/utils'
+import { lineStart, search,LEN, cons }  from '../lib/utils'
 
-describe('exists', function () {
-  it('returns true if the given parameter is defined', function () {
-    const expectTrue = value => expect(exists(value)).to.equal(true)
-    expectTrue('')
-    expectTrue(0)
-    expectTrue(false)
-    expectTrue({})
-    expectTrue([])
-    expectTrue(new Date(0))
+describe('lineStart', function () {
+  it('returns index to last whitespace before the index', function () {
+    const expectTrue = (str, offset, pos) => expect(lineStart()).to.equal(0)
+    expectTrue('',0,0)
+    //          012345678901
+    expectTrue('   "a": "bc"',3,0);
+    expectTrue('   "a":  "bc" ;',9,7);
+    //          0 12345678901
+    expectTrue(' \n   "a":  "bc" ;',5,2);
   })
-
-  it('returns false if the given parameter is undefined or null', function () {
-    const expectFalse = value => expect(exists(value)).to.equal(false)
-    expectFalse()
-    // we disable the next line, because we explicitly want to test against void
-    expectFalse((void 0)) // eslint-disable-line
-    expectFalse(undefined)
-    expectFalse(null)
-
-    let someVar
-    expectFalse(someVar)
-  })
+describe('cons', function () {
+  it('cons - construct a list', function () {
+//     const expectTrue = (str, offset, pos) => expect(lineStart()).to.equal(0)
+//     expectTrue('',0,0)
+//     //          012345678901
+//     expectTrue('   "a": "bc"',3,0);
+//     expectTrue('   "a":  "bc" ;',9,7);
+//     //          0 12345678901
+//     expectTrue(' \n   "a":  "bc" ;',5,2);
+  }) 
 })
