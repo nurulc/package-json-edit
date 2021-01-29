@@ -1,7 +1,7 @@
 {
-  "name": "my-awesome-package",
-  "version": "1.0.1",
-  "description": "Look at this great package. Lots of stuff.",
+  "name": "@ngc/package-json-edit-api",
+  "version": "0.0.1",
+  "description": "Package to programatically edit json file disturbing formatting as little as possible",
   "main": "dist/index.js",
   "scripts": {
     "lint": "standard | snazzy",
@@ -43,20 +43,22 @@
   "targets": "> 0.25%, not dead",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jankapunkt/npm-package-template.git"
+    "url": "git+ssh://github.com/nurulc/package-json-edit-api.git"
   },
   "keywords": [
-    "awesome",
-    "cool",
-    "great",
-    "swag"
+    "Javascript",
+    "ES6",
+    "json",
+    "api",
+    "format",
+    "preserve"
   ],
-  "author": "Jan Küster",
+  "author": "Nurul Choudhury",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jankapunkt/npm-package-template/issues"
+    "url": "https://github.com/nurulc/package-json-edit-api/issues"
   },
-  "homepage": "https://github.com/jankapunkt/npm-package-template#readme",
+  "homepage": "//github.com/nurulc/package-json-edit-api#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
