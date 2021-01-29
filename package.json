@@ -1,7 +1,7 @@
 {
   "name": "@ngc/package-json-edit-api",
   "version": "0.0.1",
-  "description": "Package to programatically edit json file disturbing formatting as little as possible",
+  "description": "Package (or any json file) to programatically edit json file disturbing formatting as little as possible",
   "main": "dist/index.js",
   "scripts": {
     "lint": "standard | snazzy",
